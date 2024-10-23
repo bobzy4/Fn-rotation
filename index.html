@@ -3,18 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortnite Rotation Simulation</title>
+    <title>Fortnite Zone Pull Simulation</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Basic font style */
+            text-align: center; /* Center align the content */
+            background-color: #f0f0f0; /* Optional background color */
+            margin: 0; /* Reset default margin */
+            padding: 20px; /* Add padding to body */
+        }
+
+        #simulation-container {
+            position: relative;
+            width: 1000px; /* Set width of the simulation area */
+            height: 600px; /* Set height of the simulation area */
+            margin: 20px auto; /* Center the container horizontally */
+            border: 2px solid black; /* Container border */
+            background-color: white; /* Background for the simulation area */
+        }
+
+        #current-zone {
+            position: absolute;
+            background-color: rgba(0, 255, 0, 0.5); /* Current zone color */
+        }
+
+        .next-zone {
+            position: absolute;
+            background-color: rgba(255, 0, 0, 0.5); /* Next zone color */
+        }
+
+        button {
+            margin-top: 20px; /* Space above button */
+            padding: 10px 20px; /* Padding for button */
+            font-size: 16px; /* Button text size */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Fortnite Zone Pull Simulation</h1>
-        <!-- Add any additional header content or navigation here -->
     </header>
 
     <main>
         <div id="simulation-container">
-            <div id="current-zone" style="position: absolute;"></div>
+            <div id="current-zone"></div>
             <div id="next-zones-container"></div>
         </div>
         <button id="some-button">Example Button</button> <!-- Your existing buttons or content -->
@@ -22,7 +56,7 @@
     </main>
 
     <footer>
-        <!-- Add footer content if needed -->
+        <p>&copy; 2024 Fortnite Simulation. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script> <!-- Link to your JavaScript file -->
