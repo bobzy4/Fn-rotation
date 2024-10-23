@@ -25,11 +25,11 @@ main {
 }
 
 #map-image {
-    width: 100%;
-    max-width: 1000px;
-    display: block;
-    height: auto;
-    margin: 0 auto;
+    width: 100%;         /* Makes the image responsive */
+    max-width: 800px;    /* Set a maximum width to prevent it from being too large */
+    height: auto;        /* Maintain aspect ratio */
+    display: block;      /* Ensures the image is treated as a block element */
+    margin: 20px auto;
 }
 
 #zones-container {
