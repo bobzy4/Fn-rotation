@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite Rotation Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fortnite Rotation Simulator</h1>
+    </header>
+
+    <main>
+        <!-- Map Section -->
+        <section id="map">
+            <img src="your-map-image.jpg" alt="Fortnite Map" id="map-image">
+            <!-- Zones will be dynamically displayed here -->
+            <div id="zones-container"></div>
+        </section>
+
+        <!-- Simulation Info Section -->
+        <section id="simulation-info">
+            <h2>Current Simulation Details</h2>
+            <p id="zone-info">Zone: <span id="zone-number"></span></p>
+            <p id="players-info">Players Alive: <span id="players-alive"></span></p>
+            <p id="player-concentration-info">Player Concentration: <span id="player-concentration"></span></p>
+        </section>
+
+        <!-- Control Buttons -->
+        <section id="controls">
+            <button id="next-zone">Next Zone</button>
+            <button id="reset-simulation">Reset</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
