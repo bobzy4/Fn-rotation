@@ -25,8 +25,11 @@ main {
 }
 
 #map-image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1000px;
+    display: block;
     height: auto;
+    margin: 0 auto;
 }
 
 #zones-container {
