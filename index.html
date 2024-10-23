@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortnite Zone Pull Simulation</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
     <style>
         body {
             font-family: Arial, sans-serif; /* Basic font style */
@@ -26,11 +27,17 @@
         #current-zone {
             position: absolute;
             background-color: rgba(0, 255, 0, 0.5); /* Current zone color */
+            width: 100px; /* Width of the current zone */
+            height: 100px; /* Height of the current zone */
+            top: 200px; /* Positioning example */
+            left: 450px; /* Positioning example */
         }
 
         .next-zone {
             position: absolute;
             background-color: rgba(255, 0, 0, 0.5); /* Next zone color */
+            width: 100px; /* Width of the next zone */
+            height: 100px; /* Height of the next zone */
         }
 
         button {
@@ -51,7 +58,7 @@
             <div id="current-zone"></div>
             <div id="next-zones-container"></div>
         </div>
-        <button id="some-button">Example Button</button> <!-- Your existing buttons or content -->
+        <button id="zone-button">Select Zone</button> <!-- Example Button -->
         <p>Your text content goes here...</p>
     </main>
 
